@@ -102,6 +102,8 @@ body {
     display: grid;   /*GRID*/
     grid-template-columns: repeat(8,1fr);
     align-items: center;
+    background: rgb(22,64,189);
+background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%);
 }
 .navbar .logo{
     width: 60px;
