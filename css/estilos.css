@@ -1,0 +1,386 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat';
+}
+@font-face {
+    font-family: 'montserrat'; /*fontfamily agregada manualmente*/
+    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+/*EMPIEZA EL CSS DE CONTACTO*/
+#contacto{
+    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
+.maincontacto{
+    position: relative;
+    left: 200px;
+    width: 800px;
+}
+.maincontacto__h3{
+    font-family: 'montserrat'; /*doy una fontfamily general*/
+    font-size: 60px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+.maincontacto__p{
+    font-family: 'montserrat'; /*doy una fontfamily general*/
+    padding: 10px;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    left: 100px;
+    color: white;
+}
+
+.form{ /*css del formulario*/
+    background-color: rgb(73, 78, 84);
+    color: white;
+    width: 600px;
+    text-align: center;
+    font-family: 'montserrat';
+    position: relative;
+    left: 800px;
+    background-color:black;
+}
+.form input, textarea{ /*css del text area*/
+    font-family: 'montserrat';
+    font-size: 15px;
+    width: 90%;
+    box-sizing: border-box;
+    text-align: center;}
+#boton{ /*css de los botones*/
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-color: white;
+}
+#boton2{ /*css de los obtones*/
+    background-color: black;
+    color: white;
+    width: 400px;
+    border-radius: 10px;
+    border-color: white;
+}
+#botonintegrante{ /*css de los botones*/
+    font-family: 'montserrat';
+    padding: 10px;
+    margin: 10px;
+}
+
+/*EMPIEZA EL CSS DE GALERIA*/
+#galeria{
+    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
+#galeriacarousel{
+    margin-left: 300px;
+}
+
+
+
+
+/*COMIENZA CSS HEADER*/
+/*COMIENZA CSS HEADER*/
+.navbar{
+    background-color: black;
+    display: grid;   /*GRID*/
+    grid-template-columns: repeat(8,1fr);
+    align-items: center;
+}
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    grid-column: 2/3; /*Acomodo con grid*/
+}
+.navbar .menu{
+    display: flex;   /*FLEX*/
+    justify-content: space-around;
+    grid-column: 3/6;  /*Acomodo con grid*/
+}
+.navbar .menu li{
+    text-decoration: none;
+}
+.navbar .menu a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.navbar .menu li a{
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+.navbar .menu li a:hover{
+    background-color: gray;
+
+}
+.navbar .menu-bar{
+    display: none;
+}
+
+/*COMIENZA CSS HISTORIA*/
+/*COMIENZA CSS HISTORIA*/
+.principal{
+    height: 80vh;
+    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    display: grid; /*GRID*/
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.principal .contenido{
+    grid-column: 3/5; /* acomodo con GRID */
+    grid-row: 2/3;
+    color: white;
+}
+.principal h1{
+    font-size: 70px;
+}
+.principal h3{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.principal p{
+    font-weight: 200;
+    font-size: 25px;
+    margin: 15px;
+    margin-left: 40px;
+}
+
+
+/*COMIENZA CSS HISTORIA*/
+/*COMIENZA CSS HISTORIA*/
+.principalh{
+    height: 80vh;
+    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    display: grid; /*GRID*/
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.principalh .contenidohistoria{
+        color: white;
+        grid-column: 3/6; /* acomodo con GRID*/
+        grid-row: 2/6;
+}
+.principalh h1{
+    font-size: 70px;
+}
+.principalh h2{
+    font-size: 35px;
+}
+.principalh h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.principalh p{
+    font-size: 30px;
+    margin-left: 70px;
+    background-color: black;
+    width: 1000px;
+}
+
+/*COMIENZA CSS FOOTER*/
+/*COMIENZA CSS FOOTER*/
+.piedepagina{
+    display: grid; /*GRID*/
+    height: 88px;
+    align-items: center;
+    color: white;
+    grid-template-areas: "desarrolado redes-sociales";
+    color: white;
+    grid-template-areas: "desarrolado redes-sociales";
+}
+.piedepagina .desarrollado{
+    grid-area: desarrolado;
+    display: flex; /*FLEX*/
+    justify-content: center;
+}
+
+.piedepagina .redes-sociales{
+    grid-area: redes-sociales;
+    display: flex; /*FLEX*/
+    grid-column: 8;
+}
+#instagram{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+#twitter{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+.fa-solid{
+    color: white;
+}
+
+
+
+/*MEDIAQUERIES*/
+/*MEDIAQUERIES*/
+
+@media screen and (max-width: 600px){
+    .navbar{
+        position: relative;
+    }
+    .navbar .menu-bar{
+        display: block;
+        grid-column: 8/9; /*PONGO EL MENU BAR*/
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+    }
+    .navbar .menu{
+        display: none; /*SACO EL MENU DEL NAVBAR*/
+    }
+
+    .principal .contenido{
+        grid-row: 3/7;
+    }
+    .principal h1{
+        font-size: 25px; /*ACHICO LA FONT SIZE*/
+    }
+    .principal p{
+        display: none;
+    }
+    .principal h3{
+        font-size: 18px;
+    }
+    
+
+
+    .piedepagina{
+        height: 110px;
+    }
+    .piedepagina .desarrollado{
+        font-size: 15px;
+    }
+
+
+
+}
+@media (min-width:601px) and (max-width:900px){
+    .navbar{
+        position: relative;
+    }
+    .navbar .menu-bar{
+        display: block;
+        grid-column: 8/9; /*AGREGO EL MENU BAR*/
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .navbar .menu{
+        display: none; /*QUITO EL MENU DEL NAVBAR*/
+    }
+    .principal h1{
+        font-size: 50px;
+    }
+    .principal h3{
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+    
+}
+@media (min-width:901px) and (max-width:1024px){
+    .navbar{
+        position: relative;
+    }
+    .navbar .menu{
+        font-size: 18px;
+        grid-column: 4/8;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .principalh{
+        grid-row: 3/7;
+    }
+    .principalh h1{
+        font-size: 45px;
+    }
+    .principalh h2{
+        font-size: 30px;
+    }
+    .principalh p{
+        display: none;
+    }
+    .principalh h3{
+        font-size: 18px;
+    }
+}
+    
+    @media (min-width:601px) and (max-width:900px){
+        .principalh h1{
+            font-size: 50px;
+        }
+        .principalh h3{
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-left: 20px;
+        }
+        .principalh p{
+            display: none;
+        }
+        
+    }
+@media (min-width:901px) and (max-width:1024px){
+
+    .principalh p{
+        font-size: 20px;
+        width: 500px;
+    }
+}
+@media (min-width:1025px) and (max-width:1340px){
+    .navbar{
+        position: relative;
+    }
+    .navbar .menu{
+        grid-column: 7/8;
+    }
+    .principalh h3{
+        margin-bottom: 0px;
+    }
+    .principalh p{
+        width: 700px;
+        font-size: 25px;
+    }
+}
+
+@keyframes rotar_logo {
+    0%{
+        transform: rotate(0px);
+}
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360);
+    }
+}
