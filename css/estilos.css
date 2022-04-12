@@ -216,6 +216,8 @@ background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba
     grid-template-areas: "desarrolado redes-sociales";
     color: white;
     grid-template-areas: "desarrolado redes-sociales";
+    background: rgb(22,64,189);
+background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%);
 }
 .piedepagina .desarrollado{
     grid-area: desarrolado;
