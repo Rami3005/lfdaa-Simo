@@ -109,6 +109,11 @@ background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba
     width: 60px;
     height: 60px;
     grid-column: 2/3; /*Acomodo con grid*/
+    animation-name: rotar_logo;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 1s;
 }
 .navbar .menu{
     display: flex;   /*FLEX*/
