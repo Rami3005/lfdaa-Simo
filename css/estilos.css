@@ -67,6 +67,14 @@ color: white;
 #galeriacarousel{
     margin-left: 300px;
 }
+#galeriac{
+    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
 
 
 
