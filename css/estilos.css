@@ -81,15 +81,19 @@ color: white;
 
 /*COMIENZA CSS HEADER*/
 /*COMIENZA CSS HEADER*/
-.navbar{
-    background-color: black;
-    display: grid;   /*GRID*/
-    grid-template-columns: repeat(8,1fr);
-    align-items: center;
+#header{
     background: rgb(22,64,189);
 background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%);
 }
-.navbar .logo{
+#header a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+#header .navbar-brand{
     width: 60px;
     height: 60px;
     grid-column: 2/3; /*Acomodo con grid*/
@@ -99,31 +103,8 @@ background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba
     animation-duration: 3s;
     animation-delay: 1s;
 }
-.navbar .menu{
-    display: flex;   /*FLEX*/
-    justify-content: space-around;
-    grid-column: 3/6;  /*Acomodo con grid*/
-}
-.navbar .menu li{
-    text-decoration: none;
-}
-.navbar .menu a{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
-}
-.navbar .menu li a{
-    padding: 0.5rem 1rem;
-    transition: all 0.4s linear;
-    border-radius: 5px;
-}
-.navbar .menu li a:hover{
-    background-color: gray;
-
-}
-.navbar .menu-bar{
-    display: none;
+#header a:hover{
+    background-color: black;
 }
 
 /*COMIENZA CSS INDEX*/
