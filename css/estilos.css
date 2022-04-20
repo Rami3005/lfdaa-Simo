@@ -46,7 +46,9 @@ color: white;
 #contacto label{
     color: white;
 }
-
+#inputs:focus{
+    border: solid 2px rgb(22, 64, 189);
+}
 
 .tableconc{
     padding-top: 30px;
@@ -58,22 +60,25 @@ color: white;
 }
 
 /*EMPIEZA EL CSS DE GALERIA*/
-#galeria{
+#galeria{     
     background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
     background-size: cover;
     background-position: center;
     max-width: 100%;
 }
-#galeriacarousel{
+#galeriacarousel{ /*Cambio el boostrap a mi gusto*/
     margin-left: 300px;
 }
-#galeriac{
+#galeriac{   /*Cambio el boostrap a mi gusto*/
     background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
     background-size: cover;
     background-position: center;
     max-width: 100%;
     padding-top: 30px;
     margin-bottom: 20px;
+}
+#imagenes{
+    height: 700px;
 }
 
 
@@ -93,20 +98,26 @@ background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba
     transition: all 0.4s linear;
     border-radius: 5px;
 }
-#header .navbar-brand{
+#logolfdaa{
+    width: 60px;
+    height: 60px;
+}
+#header .navbar-brand{ /*Cambio el boostrap a mi gusto*/
     width: 60px;
     height: 60px;
     grid-column: 2/3; /*Acomodo con grid*/
     animation-name: rotar_logo;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;  /*Animacion*/
     animation-timing-function: linear;
     animation-duration: 3s;
     animation-delay: 1s;
 }
-#header a:hover{
+#header a:hover{  /*interaccion con el cursor*/
     background-color: black;
 }
-
+#header .navbar-brand:hover{
+    background-color: rgb(22, 64, 189);
+}
 /*COMIENZA CSS INDEX*/
 /*COMIENZA CSS INDEX*/
 .principal{
@@ -128,7 +139,7 @@ background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba
 .principal h1{
     font-size: 70px;
 }
-.principal h3{
+.principal h2{
     font-size: 40px;
     text-transform: uppercase;
     margin-left: 20px;
@@ -238,13 +249,13 @@ background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba
         grid-row: 3/7;
     }
     .principal h1{
-        font-size: 25px; /*ACHICO LA FONT SIZE*/
+        font-size: 38px; /*ACHICO LA FONT SIZE*/
     }
     .principal p{
         display: none;
     }
-    .principal h3{
-        font-size: 18px;
+    .principal h2{
+        font-size: 28px;
     }
     
 
@@ -275,7 +286,7 @@ background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba
     .principal h1{
         font-size: 50px;
     }
-    .principal h3{
+    .principal h2{
         font-size: 30px;
         text-transform: uppercase;
         margin-left: 20px;
@@ -347,6 +358,7 @@ background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba
     }
 }
 
+/*Animaciones*/
 @keyframes rotar_logo {
     0%{
         transform: rotate(0px);
@@ -356,5 +368,35 @@ background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba
     }
     100%{
         transform: rotate(360);
+    }
+}
+@media screen and (max-width: 600px){
+    #imagenes{
+        width: 600px;
+        height:650px;
+    }
+    #galeriac iframe{
+        width: 600px;
+        height:650px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    #imagenes{
+        width: 800px;
+        height: 750px;
+    }
+    #galeriac iframe{
+        width: 800px;
+        height: 750px;
+    }
+}
+@media (min-width:601px) and (max-width:767px){
+    #imagenes{
+        width: 700px;
+        height: 650px;
+    }
+    #galeriac iframe{
+        width: 700px;
+        height: 650px;
     }
 }
