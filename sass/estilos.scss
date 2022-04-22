@@ -1,0 +1,179 @@
+@import "colores";
+@import "fondos";
+
+/*COMIENZA CSS HEADER*/
+/*COMIENZA CSS HEADER*/
+#header{
+    background: $color-header;
+background: $color-gradiente;
+    a{
+        text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    &:hover{
+        background-color: $color-hover;
+    }
+    }
+    .navbar-brand{
+    width: 60px;
+    height: 60px;
+    grid-column: 2/3; /*Acomodo con grid*/
+    animation-name: rotar_logo;
+    animation-iteration-count: infinite;  /*Animacion*/
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    &:hover{
+        background-color: $color-header;
+    }
+    }
+}
+#logolfdaa{
+    width: 60px;
+    height: 60px;
+}
+.principal{
+    height: 80vh;
+    background-image: $fondos-imagen;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    display: grid; /*GRID*/
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+    .contenido{
+    grid-column: 3/5; /*acomodo con GRID*/
+    grid-row: 2/3;
+    color: $color-fuentes;
+    }
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+    p{
+    font-weight: 200;
+    font-size: 25px;
+    margin: 15px;
+    margin-left: 40px;
+    }
+}
+/*COMIENZA CSS HISTORIA*/
+/*COMIENZA CSS HISTORIA*/
+.principalh{
+    height: 80vh;
+    background-image: $fondos-imagen;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    display: grid; /*GRID*/
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+    .contenidohistoria{
+        color: white;
+        grid-column: 3/6;
+        grid-row: 2/6;
+    }
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 30px;
+        margin-left: 70px;
+        background-color: $color-hover;
+        width: 1000px;
+    }
+}
+/*COMIENZA CSS FOOTER*/
+/*COMIENZA CSS FOOTER*/
+.piedepagina{
+    display: grid; /*GRID*/
+    height: 88px;
+    align-items: center;
+    color: $color-fuentes;
+    grid-template-areas: "desarrolado redes-sociales";
+    background: $color-header;
+background: $color-gradiente;
+    .desarrollado{
+    grid-area: desarrolado;
+    display: flex; /*FLEX*/
+    justify-content: center;
+    }
+    .redes-sociales{
+    grid-area: redes-sociales;
+    display: flex; /*FLEX*/
+    grid-column: 8;
+    }
+}
+#instagram{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: $color-fuentes;
+}
+#twitter{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: $color-fuentes;
+}
+.fa-solid{
+    color: $color-fuentes;
+}
+@media screen and (max-width: 600px){
+    .principal{
+        .contenido{
+            grid-row: 3/7;
+        }
+        h1{
+        font-size: 38px; /*ACHICO LA FONT SIZE*/
+        }
+        h2{
+        font-size: 28px;
+        }
+        p{
+        display: none;
+        }
+    }
+    .piedepagina{
+        height: 110px;
+        .desarrollado{
+            font-size: 15px;
+        }
+    }
+}
+@media (min-width:601px) and (max-width:900px){
+    .principal{
+        h1{
+        font-size: 50px;
+        }
+        h2{
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-left: 20px;
+        }
+    }
+}
+/*Animaciones*/
+@keyframes rotar_logo {
+    0%{
+        transform: rotate(0px);
+}
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360);
+    }
+}

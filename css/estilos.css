@@ -1,402 +1,192 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'montserrat';
-}
-@font-face {
-    font-family: 'montserrat'; /*fontfamily agregada manualmente*/
-    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf');
-}
-
-/*EMPIEZA EL CSS DE CONTACTO*/
-#contacto{
-    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    padding-bottom: 120px;
-}
-.maincontacto h1{
-padding-top: 50px;
-margin-left: 50px;
-font-size: 70px;
-font-family: 'montserrat';
-color: white;
-}
-.maincontacto h2{
-    font-family: 'montserrat'; /*doy una fontfamily general*/
-    font-size: 60px;
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: white;
-}
-.maincontacto h3{
-    font-family: 'montserrat'; /*doy una fontfamily general*/
-    padding: 10px;
-    font-size: 25px;
-    margin-left: 20px;
-    margin-right: 20px;
-    color: white;
-}
-#contacto label{
-    color: white;
-}
-#inputs:focus{
-    border: solid 2px rgb(22, 64, 189);
-}
-
-.tableconc{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-}
-
-/*EMPIEZA EL CSS DE GALERIA*/
-#galeria{     
-    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-}
-#galeriacarousel{ /*Cambio el boostrap a mi gusto*/
-    margin-left: 300px;
-}
-#galeriac{   /*Cambio el boostrap a mi gusto*/
-    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    padding-top: 30px;
-    margin-bottom: 20px;
-}
-#imagenes{
-    height: 700px;
-}
-
-
-
-
 /*COMIENZA CSS HEADER*/
 /*COMIENZA CSS HEADER*/
-#header{
-    background: rgb(22,64,189);
-background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%);
+#header {
+  background: rgb(22, 64, 189);
+  background: linear-gradient(90deg, rgb(22, 64, 189) 0%, rgb(0, 0, 0) 60%, rgb(0, 0, 0) 100%);
 }
-#header a{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    font-size: 20px;
-    transition: all 0.4s linear;
-    border-radius: 5px;
+#header a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.4s linear;
+  border-radius: 5px;
 }
-#logolfdaa{
-    width: 60px;
-    height: 60px;
+#header a:hover {
+  background-color: black;
 }
-#header .navbar-brand{ /*Cambio el boostrap a mi gusto*/
-    width: 60px;
-    height: 60px;
-    grid-column: 2/3; /*Acomodo con grid*/
-    animation-name: rotar_logo;
-    animation-iteration-count: infinite;  /*Animacion*/
-    animation-timing-function: linear;
-    animation-duration: 3s;
-    animation-delay: 1s;
+#header .navbar-brand {
+  width: 60px;
+  height: 60px;
+  grid-column: 2/3;
+  /*Acomodo con grid*/
+  animation-name: rotar_logo;
+  animation-iteration-count: infinite;
+  /*Animacion*/
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-delay: 1s;
 }
-#header a:hover{  /*interaccion con el cursor*/
-    background-color: black;
-}
-#header .navbar-brand:hover{
-    background-color: rgb(22, 64, 189);
-}
-/*COMIENZA CSS INDEX*/
-/*COMIENZA CSS INDEX*/
-.principal{
-    height: 80vh;
-    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    display: grid; /*GRID*/
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(8,1fr);
+#header .navbar-brand:hover {
+  background-color: rgb(22, 64, 189);
 }
 
-.principal .contenido{
-    grid-column: 3/5; /* acomodo con GRID */
-    grid-row: 2/3;
-    color: white;
+#logolfdaa {
+  width: 60px;
+  height: 60px;
 }
-.principal h1{
-    font-size: 70px;
+
+.principal {
+  height: 80vh;
+  background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  display: grid;
+  /*GRID*/
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
 }
-.principal h2{
-    font-size: 40px;
+.principal .contenido {
+  grid-column: 3/5;
+  /*acomodo con GRID*/
+  grid-row: 2/3;
+  color: white;
+}
+.principal h1 {
+  font-size: 70px;
+}
+.principal h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.principal p {
+  font-weight: 200;
+  font-size: 25px;
+  margin: 15px;
+  margin-left: 40px;
+}
+
+/*COMIENZA CSS HISTORIA*/
+/*COMIENZA CSS HISTORIA*/
+.principalh {
+  height: 80vh;
+  background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  display: grid;
+  /*GRID*/
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+.principalh .contenidohistoria {
+  color: white;
+  grid-column: 3/6;
+  grid-row: 2/6;
+}
+.principalh h1 {
+  font-size: 70px;
+}
+.principalh h2 {
+  font-size: 35px;
+}
+.principalh h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.principalh p {
+  font-size: 30px;
+  margin-left: 70px;
+  background-color: black;
+  width: 1000px;
+}
+
+/*COMIENZA CSS FOOTER*/
+/*COMIENZA CSS FOOTER*/
+.piedepagina {
+  display: grid;
+  /*GRID*/
+  height: 88px;
+  align-items: center;
+  color: white;
+  grid-template-areas: "desarrolado redes-sociales";
+  background: rgb(22, 64, 189);
+  background: linear-gradient(90deg, rgb(22, 64, 189) 0%, rgb(0, 0, 0) 60%, rgb(0, 0, 0) 100%);
+}
+.piedepagina .desarrollado {
+  grid-area: desarrolado;
+  display: flex;
+  /*FLEX*/
+  justify-content: center;
+}
+.piedepagina .redes-sociales {
+  grid-area: redes-sociales;
+  display: flex;
+  /*FLEX*/
+  grid-column: 8;
+}
+
+#instagram {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+#twitter {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.fa-solid {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .principal .contenido {
+    grid-row: 3/7;
+  }
+  .principal h1 {
+    font-size: 38px;
+    /*ACHICO LA FONT SIZE*/
+  }
+  .principal h2 {
+    font-size: 28px;
+  }
+  .principal p {
+    display: none;
+  }
+
+  .piedepagina {
+    height: 110px;
+  }
+  .piedepagina .desarrollado {
+    font-size: 15px;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .principal h1 {
+    font-size: 50px;
+  }
+  .principal h2 {
+    font-size: 30px;
     text-transform: uppercase;
     margin-left: 20px;
+  }
 }
-.principal p{
-    font-weight: 200;
-    font-size: 25px;
-    margin: 15px;
-    margin-left: 40px;
-}
-
-
-/*COMIENZA CSS HISTORIA*/
-/*COMIENZA CSS HISTORIA*/
-.principalh{
-    height: 80vh;
-    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    display: grid; /*GRID*/
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(8,1fr);
-}
-
-.principalh .contenidohistoria{
-        color: white;
-        grid-column: 3/6; /* acomodo con GRID*/
-        grid-row: 2/6;
-}
-.principalh h1{
-    font-size: 70px;
-}
-.principalh h2{
-    font-size: 35px;
-}
-.principalh h3{
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-.principalh p{
-    font-size: 30px;
-    margin-left: 70px;
-    background-color: black;
-    width: 1000px;
-}
-
-/*COMIENZA CSS FOOTER*/
-/*COMIENZA CSS FOOTER*/
-.piedepagina{
-    display: grid; /*GRID*/
-    height: 88px;
-    align-items: center;
-    color: white;
-    grid-template-areas: "desarrolado redes-sociales";
-    color: white;
-    grid-template-areas: "desarrolado redes-sociales";
-    background: rgb(22,64,189);
-background: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%);
-}
-.piedepagina .desarrollado{
-    grid-area: desarrolado;
-    display: flex; /*FLEX*/
-    justify-content: center;
-}
-
-.piedepagina .redes-sociales{
-    grid-area: redes-sociales;
-    display: flex; /*FLEX*/
-    grid-column: 8;
-}
-#instagram{
-    margin-left: 10px;
-    margin-right: 10px;
-    color: white;
-}
-#twitter{
-    margin-left: 10px;
-    margin-right: 10px;
-    color: white;
-}
-.fa-solid{
-    color: white;
-}
-
-
-
-/*MEDIAQUERIES*/
-/*MEDIAQUERIES*/
-
-@media screen and (max-width: 600px){
-    .navbar{
-        position: relative;
-    }
-    .navbar .menu-bar{
-        display: block;
-        grid-column: 8/9; /*PONGO EL MENU BAR*/
-        font-size: 30px;
-        cursor: pointer;
-        color: white;
-    }
-    .navbar .menu{
-        display: none; /*SACO EL MENU DEL NAVBAR*/
-    }
-
-    .principal .contenido{
-        grid-row: 3/7;
-    }
-    .principal h1{
-        font-size: 38px; /*ACHICO LA FONT SIZE*/
-    }
-    .principal p{
-        display: none;
-    }
-    .principal h2{
-        font-size: 28px;
-    }
-    
-
-
-    .piedepagina{
-        height: 110px;
-    }
-    .piedepagina .desarrollado{
-        font-size: 15px;
-    }
-
-
-
-}
-@media (min-width:601px) and (max-width:900px){
-    .navbar{
-        position: relative;
-    }
-    .navbar .menu-bar{
-        display: block;
-        grid-column: 8/9; /*AGREGO EL MENU BAR*/
-        font-size: 30px;
-        cursor: pointer;
-    }
-    .navbar .menu{
-        display: none; /*QUITO EL MENU DEL NAVBAR*/
-    }
-    .principal h1{
-        font-size: 50px;
-    }
-    .principal h2{
-        font-size: 30px;
-        text-transform: uppercase;
-        margin-left: 20px;
-    }
-    
-}
-@media (min-width:901px) and (max-width:1024px){
-    .navbar{
-        position: relative;
-    }
-    .navbar .menu{
-        font-size: 18px;
-        grid-column: 4/8;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .principalh{
-        grid-row: 3/7;
-    }
-    .principalh h1{
-        font-size: 45px;
-    }
-    .principalh h2{
-        font-size: 30px;
-    }
-    .principalh p{
-        display: none;
-    }
-    .principalh h3{
-        font-size: 18px;
-    }
-}
-    
-    @media (min-width:601px) and (max-width:900px){
-        .principalh h1{
-            font-size: 50px;
-        }
-        .principalh h3{
-            font-size: 30px;
-            text-transform: uppercase;
-            margin-left: 20px;
-        }
-        .principalh p{
-            display: none;
-        }
-        
-    }
-@media (min-width:901px) and (max-width:1024px){
-
-    .principalh p{
-        font-size: 20px;
-        width: 500px;
-    }
-}
-@media (min-width:1025px) and (max-width:1340px){
-    .navbar{
-        position: relative;
-    }
-    .navbar .menu{
-        grid-column: 7/8;
-    }
-    .principalh h3{
-        margin-bottom: 0px;
-    }
-    .principalh p{
-        width: 700px;
-        font-size: 25px;
-    }
-}
-
 /*Animaciones*/
 @keyframes rotar_logo {
-    0%{
-        transform: rotate(0px);
+  0% {
+    transform: rotate(0px);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360);
+  }
 }
-    50%{
-        transform: rotate(180deg);
-    }
-    100%{
-        transform: rotate(360);
-    }
-}
-@media screen and (max-width: 600px){
-    #imagenes{
-        width: 600px;
-        height:650px;
-    }
-    #galeriac iframe{
-        width: 600px;
-        height:650px;
-    }
-}
-@media (min-width:768px) and (max-width:991px){
-    #imagenes{
-        width: 800px;
-        height: 750px;
-    }
-    #galeriac iframe{
-        width: 800px;
-        height: 750px;
-    }
-}
-@media (min-width:601px) and (max-width:767px){
-    #imagenes{
-        width: 700px;
-        height: 650px;
-    }
-    #galeriac iframe{
-        width: 700px;
-        height: 650px;
-    }
-}
+
+/*# sourceMappingURL=estilos.css.map */
