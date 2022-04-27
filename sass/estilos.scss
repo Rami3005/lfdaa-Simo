@@ -7,7 +7,7 @@
 background: $color-gradiente;
     a{
         text-decoration: none;
-    color: white;
+    color: $color-fuentes;
     cursor: pointer;
     font-size: 20px;
     transition: all 0.4s linear;
@@ -68,7 +68,7 @@ background: $color-gradiente;
 .tableconc{
     padding-top: 30px;
     padding-bottom: 30px;
-    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
+    background-image: $fondos-imagen;
     background-size: cover;
     background-position: center;
     max-width: 100%;
@@ -85,7 +85,7 @@ background: $color-gradiente;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(8,1fr);
     .contenidohistoria{
-        color: white;
+        color: $color-fuentes;
         grid-column: 3/6;
         grid-row: 2/6;
     }
@@ -109,7 +109,7 @@ background: $color-gradiente;
 /*EMPIEZA EL CSS DE GALERIA*/
 /*EMPIEZA EL CSS DE GALERIA*/
 #galeria{     
-    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
+    background-image: $fondos-imagen;
     background-size: cover;
     background-position: center;
     max-width: 100%;
@@ -118,7 +118,7 @@ background: $color-gradiente;
     margin-left: 300px;
 }
 #galeriac{   /*Cambio el boostrap a mi gusto*/
-    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
+    background-image: $fondos-imagen;
     background-size: cover;
     background-position: center;
     max-width: 100%;
@@ -136,7 +136,7 @@ background: $color-gradiente;
         margin-left: 50px;
         font-size: 70px;
         font-family: 'montserrat';
-        color: white;
+        color: $color-fuentes;
         }
     h2{
         font-family: 'montserrat';
@@ -144,7 +144,7 @@ background: $color-gradiente;
         padding: 10px;
         margin-left: 10px;
         margin-right: 10px;
-        color: white;
+        color: $color-fuentes;
     }
     h3{
         font-family: 'montserrat';
@@ -152,22 +152,22 @@ background: $color-gradiente;
         font-size: 25px;
         margin-left: 20px;
         margin-right: 20px;
-        color: white;
+        color: $color-fuentes;
     }
 }
 #contacto{
-    background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
+    background-image: $fondos-imagen;
     background-size: cover;
     background-position: center;
     max-width: 100%;
     padding-bottom: 120px;
     label{
-        color: white;
+        color: $color-fuentes;
     }
 }
     #inputs{
         &:focus{
-        border: solid 2px rgb(22, 64, 189);
+        border: solid 2px $color-header;
         }
     }
 /*COMIENZA CSS FOOTER*/
