@@ -1,0 +1,6 @@
+$font-sizep: 30px;
+
+@mixin fuentep ($color-fuentes, $font-sizep){ /*MIXIN*//*MIXIN*/
+    font-size: $font-sizep;
+    color: $color-fuentes;
+}

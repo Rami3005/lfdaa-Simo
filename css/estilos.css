@@ -1,3 +1,17 @@
+p {
+  /*IF*/
+  /*IF*/
+  color: white;
+  background-color: black;
+}
+
+h1 {
+  /*MAP-GET*/
+  /*MAP-GET*/
+  background-color: none;
+  color: white;
+}
+
 /*COMIENZA CSS HEADER*/
 /*COMIENZA CSS HEADER*/
 #header {
@@ -36,7 +50,7 @@
   height: 60px;
 }
 
-.principal {
+.principal, .principalh {
   height: 80vh;
   background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
   background-size: cover;
@@ -47,32 +61,34 @@
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(8, 1fr);
 }
-.principal .contenido {
+.principal .contenido, .principalh .contenido {
   grid-column: 3/5;
   /*acomodo con GRID*/
   grid-row: 2/3;
   color: white;
 }
-.principal h1 {
+.principal h1, .principalh h1 {
+  padding-top: 50px;
+  margin-left: 20px;
   font-size: 70px;
 }
-.principal h2 {
+.principal h2, .principalh h2 {
   font-size: 40px;
   text-transform: uppercase;
   margin-left: 20px;
 }
-.principal p {
+.principal p, .principalh p {
   font-weight: 200;
-  font-size: 25px;
+  font-size: 30px;
   margin: 15px;
   margin-left: 40px;
 }
 
 /*COMIENZA CSS CONCIERTOS*/
 /*COMIENZA CSS CONCIERTOS*/
-.tableconc {
+.tableconc, #galeriac {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
   background-size: cover;
   background-position: center;
@@ -82,15 +98,8 @@
 /*COMIENZA CSS HISTORIA*/
 /*COMIENZA CSS HISTORIA*/
 .principalh {
-  height: 80vh;
-  background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
-  background-size: cover;
-  background-position: center;
-  max-width: 100%;
-  display: grid;
-  /*GRID*/
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  /*EXTEND*/
+  /*EXTEND*/
 }
 .principalh .contenidohistoria {
   color: white;
@@ -99,16 +108,32 @@
 }
 .principalh h1 {
   font-size: 70px;
+  /*No le aplico mixin con color porque para eso tengo el map-get de los H1 en _colores.scss*/
 }
 .principalh h2 {
+  /*MIXIN*/
+  /*MIXIN*/
   font-size: 35px;
+  color: white;
+  /*MIXIN*/
+  /*MIXIN*/
 }
 .principalh h3 {
-  font-size: 20px;
+  /*MIXIN*/
+  /*MIXIN*/
+  font-size: 25px;
+  color: white;
+  /*MIXIN*/
+  /*MIXIN*/
   margin-bottom: 30px;
 }
 .principalh p {
-  font-size: 30px;
+  /*MIXIN*/
+  /*MIXIN*/
+  font-size: 24px;
+  color: white;
+  /*MIXIN*/
+  /*MIXIN*/
   margin-left: 70px;
   background-color: black;
   width: 1000px;
@@ -130,12 +155,8 @@
 
 #galeriac {
   /*Cambio el boostrap a mi gusto*/
-  background-image: url(https://www.rionegro.com.ar/wp-content/uploads/2021/04/Los-fundamentalistas-1.jpg);
-  background-size: cover;
-  background-position: center;
-  max-width: 100%;
-  padding-top: 30px;
-  margin-bottom: 20px;
+  /*EXTEND*/
+  /*EXTEND*/
 }
 
 #imagenes {
@@ -146,10 +167,8 @@
 /*COMIENZA CSS CONTACTO*/
 .maincontacto h1 {
   padding-top: 50px;
-  margin-left: 50px;
+  margin-left: 20px;
   font-size: 70px;
-  font-family: "montserrat";
-  color: white;
 }
 .maincontacto h2 {
   font-family: "montserrat";
@@ -180,7 +199,12 @@
 }
 
 #inputs:focus {
+  /*MIXIN*/
+  /*MIXIN*/
   border: solid 2px rgb(22, 64, 189);
+  border-radius: 5px;
+  /*MIXIN*/
+  /*MIXIN*/
 }
 
 /*COMIENZA CSS FOOTER*/
@@ -188,7 +212,7 @@
 .piedepagina {
   display: grid;
   /*GRID*/
-  height: 88px;
+  height: 120px;
   align-items: center;
   color: white;
   grid-template-areas: "desarrolado redes-sociales";
@@ -225,17 +249,17 @@
 }
 
 @media screen and (max-width: 600px) {
-  .principal .contenido {
+  .principal .contenido, .principalh .contenido {
     grid-row: 3/7;
   }
-  .principal h1 {
+  .principal h1, .principalh h1 {
     font-size: 38px;
     /*ACHICO LA FONT SIZE*/
   }
-  .principal h2 {
+  .principal h2, .principalh h2 {
     font-size: 28px;
   }
-  .principal p {
+  .principal p, .principalh p {
     display: none;
   }
 
@@ -247,10 +271,10 @@
   }
 }
 @media (min-width: 601px) and (max-width: 900px) {
-  .principal h1 {
+  .principal h1, .principalh h1 {
     font-size: 50px;
   }
-  .principal h2 {
+  .principal h2, .principalh h2 {
     font-size: 30px;
     text-transform: uppercase;
     margin-left: 20px;
@@ -280,8 +304,7 @@
 }
 @media (min-width: 901px) and (max-width: 1024px) {
   .principalh p {
-    font-size: 18px;
-    width: 500px;
+    display: none;
   }
 }
 @media (min-width: 1025px) and (max-width: 1340px) {

@@ -2,3 +2,33 @@ $color-fuentes: white;
 $color-hover: black;
 $color-header: rgb(22,64,189);
 $color-gradiente: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%);
+
+p{    /*IF*//*IF*/
+    @if $color-hover == black{
+        color: white;
+        background-color: black;
+    }
+    @else if $color-hover == orangered{
+        color: black;
+        background-color: orangered;
+    }
+    @else{
+        color: brown;
+    }
+}
+
+@mixin crearBordes { /*MIXIN*//*MIXIN*/
+    border: solid 2px rgb(22,64,189);
+    border-radius: 5px;
+}
+
+$paleta:( /*MAP*//*MAP*/
+    'primario': white,
+    'secundario': blue,
+    'sucess':pink,
+    'none': none,
+);
+h1{ /*MAP-GET*//*MAP-GET*/
+    background-color: map-get($map: $paleta, $key: 'none');
+    color: map-get($map: $paleta, $key: 'primario');
+}

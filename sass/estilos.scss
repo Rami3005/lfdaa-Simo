@@ -1,5 +1,6 @@
 @import "colores";
 @import "fondos";
+@import "fuentes";
 /*COMIENZA CSS HEADER*/
 /*COMIENZA CSS HEADER*/
 #header{
@@ -49,6 +50,8 @@ background: $color-gradiente;
     color: $color-fuentes;
     }
     h1{
+        padding-top: 50px;
+        margin-left: 20px;
         font-size: 70px;
     }
     h2{
@@ -58,7 +61,7 @@ background: $color-gradiente;
     }
     p{
     font-weight: 200;
-    font-size: 25px;
+    font-size: 30px;
     margin: 15px;
     margin-left: 40px;
     }
@@ -67,7 +70,7 @@ background: $color-gradiente;
 /*COMIENZA CSS CONCIERTOS*/
 .tableconc{
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     background-image: $fondos-imagen;
     background-size: cover;
     background-position: center;
@@ -76,31 +79,24 @@ background: $color-gradiente;
 /*COMIENZA CSS HISTORIA*/
 /*COMIENZA CSS HISTORIA*/
 .principalh{
-    height: 80vh;
-    background-image: $fondos-imagen;
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    display: grid; /*GRID*/
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(8,1fr);
+    @extend .principal; /*EXTEND*//*EXTEND*/
     .contenidohistoria{
         color: $color-fuentes;
         grid-column: 3/6;
         grid-row: 2/6;
     }
     h1{
-        font-size: 70px;
+        font-size: 70px;/*No le aplico mixin con color porque para eso tengo el map-get de los H1 en _colores.scss*/
     }
     h2{
-        font-size: 35px;
+        @include fuentep(white, 35px); /*MIXIN*//*MIXIN*/
     }
     h3{
-        font-size: 20px;
+        @include fuentep(white, 25px); /*MIXIN*//*MIXIN*/
         margin-bottom: 30px;
     }
     p{
-        font-size: 30px;
+        @include fuentep(white, 24px); /*MIXIN*//*MIXIN*/
         margin-left: 70px;
         background-color: $color-hover;
         width: 1000px;
@@ -114,16 +110,11 @@ background: $color-gradiente;
     background-position: center;
     max-width: 100%;
 }
-#galeriacarousel{ /*Cambio el boostrap a mi gusto*/
+#galeriacarousel{/*Cambio el boostrap a mi gusto*/
     margin-left: 300px;
 }
-#galeriac{   /*Cambio el boostrap a mi gusto*/
-    background-image: $fondos-imagen;
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    padding-top: 30px;
-    margin-bottom: 20px;
+#galeriac{/*Cambio el boostrap a mi gusto*/
+    @extend .tableconc; /*EXTEND*//*EXTEND*/
 }
 #imagenes{
     height: 700px;
@@ -133,10 +124,8 @@ background: $color-gradiente;
 .maincontacto{
     h1{
         padding-top: 50px;
-        margin-left: 50px;
+        margin-left: 20px;
         font-size: 70px;
-        font-family: 'montserrat';
-        color: $color-fuentes;
         }
     h2{
         font-family: 'montserrat';
@@ -167,14 +156,14 @@ background: $color-gradiente;
 }
     #inputs{
         &:focus{
-        border: solid 2px $color-header;
+        @include crearBordes;  /*MIXIN*//*MIXIN*/
         }
     }
 /*COMIENZA CSS FOOTER*/
 /*COMIENZA CSS FOOTER*/
 .piedepagina{
     display: grid; /*GRID*/
-    height: 88px;
+    height: 120px;
     align-items: center;
     color: $color-fuentes;
     grid-template-areas: "desarrolado redes-sociales";
@@ -265,8 +254,7 @@ background: $color-gradiente;
 @media (min-width:901px) and (max-width:1024px){
     .principalh{
         p{
-        font-size: 18px;
-        width: 500px;
+        display: none;
         }
     }
 }
@@ -325,8 +313,6 @@ background: $color-gradiente;
         }
     }
 }
-
-
 /*Animaciones*/
 @keyframes rotar_logo {
     0%{
