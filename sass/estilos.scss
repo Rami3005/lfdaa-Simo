@@ -84,6 +84,7 @@ background: $color-gradiente;
         color: $color-fuentes;
         grid-column: 3/6;
         grid-row: 2/6;
+        min-height: 80vh;
     }
     h1{
         font-size: 70px;/*No le aplico mixin con color porque para eso tengo el map-get de los H1 en _colores.scss*/
@@ -104,6 +105,9 @@ background: $color-gradiente;
 }
 /*EMPIEZA EL CSS DE GALERIA*/
 /*EMPIEZA EL CSS DE GALERIA*/
+.mainh1h2{
+    display: none;
+}
 #galeria{     
     background-image: $fondos-imagen;
     background-size: cover;
@@ -168,11 +172,19 @@ background: $color-gradiente;
     color: $color-fuentes;
     grid-template-areas: "desarrolado redes-sociales";
     background: $color-header;
-background: $color-gradiente;
+    background: $color-gradiente;
+    bottom: 0;
+    padding-bottom: 1em 0;
     .desarrollado{
     grid-area: desarrolado;
     display: flex; /*FLEX*/
     justify-content: center;
+    h3{
+        font-size: 28px;
+    }
+    h4{
+        font-size: 27px;
+    }
     }
     .redes-sociales{
     grid-area: redes-sociales;
@@ -192,6 +204,9 @@ background: $color-gradiente;
 }
 .fa-solid{
     color: $color-fuentes;
+}
+@media screen and (max-height:740px){
+    p{display: none;}
 }
 @media screen and (max-width: 600px){
     .principal{
