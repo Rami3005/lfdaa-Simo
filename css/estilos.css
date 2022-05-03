@@ -94,11 +94,15 @@ h1 {
   background-position: center;
   max-width: 100%;
 }
+.tableconc table, #galeriac table {
+  width: 50%;
+  margin: auto;
+}
 .tableconc th, #galeriac th {
-  background-color: rgb(29, 48, 69) !important;
+  background-color: black !important;
 }
 .tableconc td, #galeriac td {
-  background-color: rgb(29, 48, 69) !important;
+  background-color: black !important;
 }
 
 /*COMIENZA CSS HISTORIA*/
@@ -271,6 +275,7 @@ h1 {
   color: white;
 }
 
+/*Mediaqueries*/
 @media screen and (max-height: 740px) {
   p {
     display: none;
@@ -426,6 +431,12 @@ h1 {
   }
   100% {
     transform: rotate(360);
+  }
+}
+@media screen and (max-width: 1110px) {
+  .tableconc table, #galeriac table {
+    width: 100%;
+    margin: 0;
   }
 }
 
