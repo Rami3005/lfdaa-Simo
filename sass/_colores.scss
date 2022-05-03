@@ -2,6 +2,7 @@ $color-fuentes: white;
 $color-hover: black;
 $color-header: rgb(22,64,189);
 $color-gradiente: linear-gradient(90deg, rgba(22,64,189,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,1) 100%);
+$color-azulado: rgb(29, 48, 69);
 
 p{    /*IF*//*IF*/
     @if $color-hover == black{

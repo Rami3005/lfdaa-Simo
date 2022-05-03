@@ -94,6 +94,12 @@ h1 {
   background-position: center;
   max-width: 100%;
 }
+.tableconc th, #galeriac th {
+  background-color: rgb(29, 48, 69) !important;
+}
+.tableconc td, #galeriac td {
+  background-color: rgb(29, 48, 69) !important;
+}
 
 /*COMIENZA CSS HISTORIA*/
 /*COMIENZA CSS HISTORIA*/
@@ -138,6 +144,10 @@ h1 {
   margin-left: 70px;
   background-color: black;
   width: 1000px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-color: white;
+  border: 1px solid;
 }
 
 /*EMPIEZA EL CSS DE GALERIA*/
@@ -325,18 +335,30 @@ h1 {
     display: none;
   }
 }
-@media (min-width: 1025px) and (max-width: 1340px) {
+@media (min-width: 1025px) and (max-width: 1140px) {
+  .principalh p {
+    width: 600px;
+    font-size: 19px;
+    position: relative;
+    right: 70px;
+  }
+}
+@media (min-width: 1141px) and (max-width: 1340px) {
   .principalh h3 {
     margin-bottom: 0px;
   }
   .principalh p {
     width: 700px;
     font-size: 22px;
+    position: relative;
+    right: 70px;
   }
 }
 @media (min-width: 1341px) and (max-width: 1500px) {
   .principalh p {
     font-size: 24px;
+    position: relative;
+    right: 120px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -350,6 +372,17 @@ h1 {
     height: 650px;
   }
 }
+@media screen and (max-width: 575px) {
+  #imagenes {
+    width: 520px;
+    height: 630px;
+  }
+
+  #galeriac iframe {
+    width: 520px;
+    height: 630px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   #imagenes {
     width: 800px;
@@ -359,6 +392,17 @@ h1 {
   #galeriac iframe {
     width: 800px;
     height: 750px;
+  }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+  #imagenes {
+    width: 470px;
+    height: 630px;
+  }
+
+  #galeriac iframe {
+    width: 400px;
+    height: 600px;
   }
 }
 @media (min-width: 601px) and (max-width: 767px) {
